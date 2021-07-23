@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +17,125 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Store {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.IconSwitch {
+  text-align: end;
+}
+
+.icon-module, .icon-list {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-module {
+  background-image: url("components/Store/IconSwitch/images/view_module_black_24dp.svg");
+}
+
+.icon-list {
+  background-image: url("components/Store/IconSwitch/images/view_list_black_24dp.svg");
+}
+
+.CardsView {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ShopItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 27%;
+  margin-top: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-right: 1px solid #dedfe0;
+  border-left: 1px solid #dedfe0;
+  -webkit-box-shadow: 0px 11px 8px 0px rgba(88, 93, 97, 0.2);
+  -moz-box-shadow: 0px 11px 8px 0px rgba(88, 93, 97, 0.2);
+  box-shadow: 0px 11px 8px 0px rgba(88, 93, 97, 0.2);
+
+}
+
+.product-name {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.product-color {
+  margin-top: 20px;
+  font-weight: lighter;
+}
+
+.product-image {
+  width: 70%;
+}
+
+.priceBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  color: red;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.buyButton {
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 1px solid red;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buyButton:hover {
+  background-color: #EEC2C2FF;
+  border: 1px solid #EEC2C2FF;
+}
+
+.ListView > .ShopItem {
+  width: 100%;
+  border: none;
+  flex-direction: row;
+  box-shadow: none;
+}
+
+.ListView > .ShopItem > .product-image {
+  order: 1;
+  width: 10%;
+}
+
+.ListView > .ShopItem > .product-name {
+  order: 2;
+  width: 30%;
+}
+
+.ListView > .ShopItem > .product-color {
+  order: 3;
+  margin: 0;
+  width: 30%;
+}
+
+.ListView > .ShopItem > .priceBlock {
+  order: 4;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
 }
